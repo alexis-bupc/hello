@@ -13,54 +13,54 @@
             border-radius: 6px;
         }
 
-        .school {
+        #id > .school,.greet,.name,.cont,.cs{
             border-radius: 5px;
             border: 2px black;
             font-family: Arial, Helvetica, sans-serif;
             text-align: left;
             padding: 20px;
             margin: 20px;
-            background-color: blue;
             font-size: 20px;
+        }
+
+        .school {
+            background-color: blue;
         }
 
         .greet {
-            border-radius: 5px;
-            border: 2px black;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: left;
-            padding: 20px;
-            margin: 20px;
             background-color: yellow;
-            font-size: 20px;
         }
 
         .name {
-            border-radius: 5px;
-            border: 2px black;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: left;
-            padding: 20px;
-            margin: 20px;
             background-color: springgreen;
-            font-size: 20px;
         }
         
-            .cs {
-            border-radius: 5px;
-            border: 2px black;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: left;
-            padding: 20px;
-            margin: 20px;
+        .cs {
             background-color: red;
-            font-size: 20px;
         }
 
-        iframe {
-            position: relative;
-            left: 200px;
+        .cont {
+            background-color:chocolate;
         }
+
+        .cont > li {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cont > li a {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #posts {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+         iframe {
+             margin: 100px auto;
+             padding: 10px;
+         }
+
 
     </style>
     <title>Hello!</title>
@@ -71,8 +71,17 @@
         <div class="name">I'm Alexis Montales</div>
         <div class="school">I study at Bicol University</div>
         <div class="cs">I also study at Harvard University's CS50</div>
+        <div class="cont">Get in touch with me at:
+            <li><a href="https://www.facebook.com/alexis02002/">fb.com/alexis020002</li>
+            <li><a href="https://sites.google.com/bicol-u.edu.ph/alexis-montales/home">alexis.com</a></li>
+            <li>alexisgimo02@gmail.com</li>
+        </div>
     </div>
-
-    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Falexis02002%2Fposts%2F1504584386582000&show_text=false&width=500" width="500" height="497" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    <div id="posts">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAgent.Vincey%2Fposts%2F4388864147830862&show_text=true&width=500" width="500" height="587" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Falexis02002%2Fposts%2F1475846539455785&show_text=true&width=500" width="500" height="645" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Falexis02002%2Fposts%2F1524101397963632&show_text=true&width=500" width="500" height="607" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Falexis02002%2Fposts%2F1526677931039312&show_text=true&width=500" width="500" height="950" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
 </body>
 </html>
