@@ -1,0 +1,89 @@
+Git
+-keep track of changes in code
+-synchronize code between diff people
+	-push & pull
+-test changes to our code without losing the original
+-revert back to old versions to code
+Github
+-host
+-tool for manipulating repository
+
+COMMAND LINES
+--------------------------------------------------------
+
+git clone <url>
+-clone a repository
+
+COMMIT
+
+git add
+-add a file
+-keep track of this file
+-git add <filename>
+
+git commit
+-save a snapshot of the current state of the repository
+-keep track of the changes in the repo with git add
+-git commit -m "message"
+
+git push
+-push changes in my code to github
+
+git status
+-tell us what's currently happening inside of my repo
+
+git commit -am "message"
+-all of the files that have been change and commit at the same time
+-git add and git commit shortcut
+
+git pull
+-pull the latest ver of file from github
+-pull latest changes of code/file frome github
+
+Merge conflict
+-conflict when 2 diff people is changing something on the same file
+-diff peolple making changes to the same part of the code at the same time
+-------------
+<<<<<
+your changes
+=====
+remote changes
+>>>>> hash
+------------
+
+git log
+-keep track of chnages in code
+-keep track of commits
+>commit
+>auhtor
+>date
+
+git reset
+-take current state of repo and revert back to older state of repo
+-git reset --hard <commit hash> //hard reset, reset everything
+-git reset --hard origin/master //ver of rep currently at github
+-reset repo
+
+Branching
+-working on diff parts of repo at the same time
+- branches
+- master //default branch //up to date stable ver of code
+- feature //feature branch
+- focus is only 1
+- HEAD // focus in on a certain branch - repo is working on certain branch
+- if (HEAD is on default) {
+	working on default
+  } else {
+
+	working on feature	
+  }
+-switching where your HEAD is to work
+-merge branches
+COMMAND LINE
+----------------------
+-git branch //show branches and branch that your working in with *indicator
+-git checkout -b branchname //switch to new branch named branchname
+-git checkout -b branchname //create new branch
+-git checkout branchname //switch between branch
+-git merge branchname //take changes from branchname and merge it to main branch 
+----------------------
